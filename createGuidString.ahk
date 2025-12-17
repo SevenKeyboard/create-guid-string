@@ -7,9 +7,9 @@
 ; License: The Unlicense
 ;
 ; Documentation / References:
-;   CoCreateGuid function (combaseapi.h):
+;   CoCreateGuid function (combaseapi.h)
 ;     https://learn.microsoft.com/en-us/windows/win32/api/combaseapi/nf-combaseapi-cocreateguid
-;   StringFromGUID2 function (combaseapi.h):
+;   StringFromGUID2 function (combaseapi.h)
 ;     https://learn.microsoft.com/en-us/windows/win32/api/combaseapi/nf-combaseapi-stringfromguid2
 ;==============================================================
 class VersionManager_createGuidString
