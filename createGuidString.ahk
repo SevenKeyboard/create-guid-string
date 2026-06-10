@@ -17,14 +17,14 @@ class VersionManager_createGuidString
     static _ := VersionManager_createGuidString._init()
     _init()    {
         global
-        CREATEGUIDSTRING_VERSION := "1.0.0"
+        CREATEGUIDSTRING_VERSION := "1.0.1"
     }
 }
 createGuidString()    {
     static S_OK := 0x00000000
     varSetCapacity(pguid, 16, 0)
     if (dllCall("Ole32.dll\CoCreateGuid", "Ptr",&pguid, "Ptr") == S_OK)    {
-        varSetCapacity(lpsz, (A_IsUnicode ? 2 : 1) * 39, 0)
+        varSetCapacity(lpsz, 2 * 39, 0)
         if (dllCall("Ole32.dll\StringFromGUID2", "Ptr",&pguid, "Ptr",&lpsz, "Int",39, "Int"))
             return strGet(&lpsz, "UTF-16")
     }
