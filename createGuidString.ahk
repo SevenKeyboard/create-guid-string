@@ -17,7 +17,7 @@ class VersionManager_createGuidString
     static _ := this._init()
     static _init()    {
         global
-        CREATEGUIDSTRING_VERSION := "1.0.0"
+        CREATEGUIDSTRING_VERSION := "1.0.1"
     }
 }
 createGuidString()    {
